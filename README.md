@@ -9,7 +9,7 @@ tk==0.1.0
 Run `pip install -r requirements.txt`
 
 ## Running the program
-You will need Python 3.x to run this program. Meet the requirements with pip as mentioned above. Then simply run from terminal `python pydice.py` to load up the gui.
+You will need Python 3.6+ to run this program. Meet the requirements with pip as mentioned above. Then simply run from terminal `python pydice.py` to load up the gui.
 
 I recommend running in a virtual environment.
 
