@@ -30,8 +30,8 @@ def generate_roll(num, type, extra):
     # add extra to the roll
     rolled.append(extra)
 
-    print(rolled)
     print(f"Rolling {n}d{type}+{extra}")
+    print(rolled)
     print(f"Total: {sum(rolled)}")
 
 
