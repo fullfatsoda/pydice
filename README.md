@@ -3,6 +3,7 @@ A dice rolling program written in python. Will roll standard dice used in D&D an
 
 ## Requirements
 PySimpleGUI==4.24.0
+
 tk==0.1.0
 
 Run `pip install -r requirements.txt`
