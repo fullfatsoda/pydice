@@ -16,7 +16,7 @@ I recommend running in a virtual environment.
 ```
 mkdir pydice
 virtualenv --python python3 pydice
-source pydice/bin/active
+source pydice/bin/activate
 ```
 Clone the Repo and move `pydice.py & requirements.txt` to the *pydice* directory.
 
