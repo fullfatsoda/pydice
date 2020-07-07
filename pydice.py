@@ -27,12 +27,11 @@ def generate_roll(num, type, extra):
         rolled.append(d)
         del d
         num -= 1
-    # add extra to the roll
-    rolled.append(extra)
+
 
     print(f"Rolling {n}d{type}+{extra}")
     print(rolled)
-    print(f"Total: {sum(rolled)}")
+    print(f"Total: {sum(rolled) + extra}")
 
 
 sg.theme('SystemDefault1')
@@ -40,7 +39,7 @@ sg.theme('SystemDefault1')
 layout = [
 
     [
-        sg.InputText(size=(5, 1), default_text=0,
+        sg.InputText(size=(5, 1), default_text=1,
                      enable_events=True, key='-NUM-'),
         sg.Text(text="dice to roll"),
     ],
