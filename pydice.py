@@ -56,10 +56,9 @@ layout = [
         sg.Text(text="dice to roll"),
     ],
     [
-        sg.Text(text="+/- "),
         sg.InputText(size=(5, 1), default_text=0,
                      enable_events=True, key='-EXTRA-'),
-        sg.Text(text="to add to roll"),
+        sg.Text(text="(+/-) to add to roll"),
     ],
     [
         sg.Text(text="Click dice when ready")
