@@ -13,5 +13,18 @@ You will need Python 3.6+ to run this program. Meet the requirements with pip as
 
 I recommend running in a virtual environment.
 
+```
+mkdir pydice
+virtualenv --python python3 pydice
+source pydice/bin/active
+```
+Clone the Repo and move `pydice.py & requirements.txt` to the *pydice* directory.
+
+```
+cd pydice
+pip install -r requirements.txt
+python pydice.py
+```
+
 ## Screenshot
 ![A sample roll](https://raw.githubusercontent.com/fullfatsoda/pydice/master/example.png)
