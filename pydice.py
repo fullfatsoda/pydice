@@ -15,19 +15,31 @@ class Dice:
 
 # function to generate rolls
 def generate_roll(num, type, extra):
-    # collect all roll totals
+    # set default to 1 dice if 0 or <
+    if num < 1:
+        num = 1
+        window['-NUM-'].update(1)
     n = num
+    # roll totals
     rolled = []
-    # do it the amount specified
+    # roll num times
     while num > 0:
         # create the dice and roll it
         d = Dice(type).roll_dice()
-        # add it to rolled list, remove and roll another if needed
+        # add it to rolled list then remove obj
         rolled.append(d)
         del d
         num -= 1
 
-    print(f"Rolling {n}d{type}+{extra}")
+    # output
+
+    
+    # negative value in extra
+    if extra < 0:
+        print(f"Rolling {n}d{type}{extra}")
+    # 0 or >
+    else:
+        print(f"Rolling {n}d{type}+{extra}")
     print(rolled)
     print(f"Total: {sum(rolled) + extra}")
 
@@ -107,7 +119,7 @@ while True:
         generate_roll(int(values["-NUM-"]), 100, (int(values["-EXTRA-"])))
 
     if event == "Clear":
-        window['-NUM-'].update(0)
+        window['-NUM-'].update(1)
         window['-EXTRA-'].update(0)
         clear_output()
 
