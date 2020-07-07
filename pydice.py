@@ -12,9 +12,8 @@ class Dice:
         total = randint(1, self.sides)
         return total
 
+
 # function to generate rolls
-
-
 def generate_roll(num, type, extra):
     # collect all roll totals
     n = num
@@ -27,7 +26,6 @@ def generate_roll(num, type, extra):
         rolled.append(d)
         del d
         num -= 1
-
 
     print(f"Rolling {n}d{type}+{extra}")
     print(rolled)
