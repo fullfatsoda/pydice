@@ -33,7 +33,6 @@ def generate_roll(num, type, extra):
 
     # output
 
-    
     # negative value in extra
     if extra < 0:
         print(f"Rolling {n}d{type}{extra}")
