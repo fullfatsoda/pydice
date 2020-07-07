@@ -36,9 +36,12 @@ def generate_roll(num, type, extra):
     # negative value in extra
     if extra < 0:
         print(f"Rolling {n}d{type}{extra}")
-    # 0 or >
-    else:
+    # positive value in extra
+    elif extra > 0:
         print(f"Rolling {n}d{type}+{extra}")
+    # 0
+    else:
+        print(f"Rolling {n}d{type}")
     print(rolled)
     print(f"Total: {sum(rolled) + extra}")
 
